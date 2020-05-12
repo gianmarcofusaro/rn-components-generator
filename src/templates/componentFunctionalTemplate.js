@@ -5,13 +5,10 @@ import styles from './TemplateNameStyle'
 import logic from './TemplateNameLogic'
 
 const TEMPLATE_NAME = (props) => {
-
-  const {
-
-  } = props;
+  const {} = props;
 
   return (
-    null
+    <View style={styles.container}></View>
   )
 };
 
@@ -25,3 +22,4 @@ TEMPLATE_NAME.defaultProps = {
 
 export default TEMPLATE_NAME;
 `;
+

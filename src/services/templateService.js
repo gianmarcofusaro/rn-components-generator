@@ -8,7 +8,7 @@ export function onGenerateComponent(componentTemplates) {
     const { template, templateType, componentName, componentPath } = componentTemplates[i];
 
     if (existsSync(componentPath)) {
-      console.error(chalk.yellow(`⚠️  ${templateType} ${msg.onCheckComponentBeignInPathPartial} ${componentPath}`));
+      console.error(chalk.red.bold(`${templateType} ${msg.errors.GENERATION_COMPONENT_ALREADY_EXIST} in ${componentPath}`));
     } else {
       try {
         outputFileSync(componentPath, template);

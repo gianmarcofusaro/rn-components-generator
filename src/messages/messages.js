@@ -1,9 +1,9 @@
 const messages = {
-  onValidateComponentName: 'ERROR: Component name should contain only letters',
-  onCreateComponent: 'ERROR: Could not generate component',
-  onSearchCommand: 'ERROR: Command not found',
-  onCreateComponentPartial: 'failed to be generate',
-  onCheckComponentBeignInPathPartial: 'already exists in this path',
+  errors: {
+    COMMAND_NOT_FOUND: 'Command not found',
+    GENERATION_ERROR: 'Component cannot be generated',
+    GENERATION_COMPONENT_ALREADY_EXIST: 'already exists'
+  }
 };
 
 export default messages;

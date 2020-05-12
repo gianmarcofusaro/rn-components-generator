@@ -1,15 +1,15 @@
 import chalk from 'chalk';
-
 import { generateComponent } from './actions/componentActions';
 import { onGenerateConfigs } from './services/configService';
+import msg from './messages/messages';
 
 const { Command } = require('commander');
 const program = new Command();
 
 export async function interfacePrompt(args) {
-  let commandNotFound = true;
   const { component } = await onGenerateConfigs();
 
+  let commandNotFound = true;
   program
     .version('0.0.1')
     .command('')
@@ -24,8 +24,7 @@ export async function interfacePrompt(args) {
   program.parse(args);
 
   if (commandNotFound) {
-    console.error(chalk.red('Command not found.'));
-    console.log(`Run ${chalk.green('generate-react --help')} to see a list of the commmands you can run.`);
+    console.error(chalk.red(msg.errors.COMMAND_NOT_FOUND));
     process.exit(1);
   }
 }

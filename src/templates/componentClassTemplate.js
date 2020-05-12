@@ -9,7 +9,9 @@ class TEMPLATE_NAME extends React.Component {
   }
 
   render() {
-    return null;
+    return (
+      <View style={styles.container}></View>
+    );
   }
 }
 
