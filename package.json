@@ -1,0 +1,37 @@
+{
+  "name": "rn-component-generator",
+  "version": "1.0.0",
+  "description": "React-Native components generator",
+  "scripts": {
+    "generate": "node generate c",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gianmarcofusaro/rn-components-generator.git"
+  },
+  "keywords": [
+    "[\"rn\"",
+    "\"react-native\"",
+    "\"generator\"",
+    "\"components",
+    "generator\"",
+    "\"scaffolding\"",
+    "]"
+  ],
+  "author": "https://github.com/gianmarcofusaro",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gianmarcofusaro/rn-components-generator/issues"
+  },
+  "homepage": "https://github.com/gianmarcofusaro/rn-components-generator#readme",
+  "devDependencies": {
+    "chalk": "^4.0.0",
+    "commander": "^4.0.1",
+    "esm": "^3.2.25",
+    "fs": "0.0.1-security",
+    "fs-extra": "^9.0.0",
+    "inquirer": "^7.1.0",
+    "replace": "^1.2.0"
+  }
+}
